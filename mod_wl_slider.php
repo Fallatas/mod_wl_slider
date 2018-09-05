@@ -20,6 +20,13 @@ $copy = modWl_SliderHelper::copyImages($params);
 
 $number = modWl_SliderHelper::countImages();
 
+if($number == 0){
+    $app->enqueueMessage(JText::_('MOD_WL_SLIDER_NOT_FLIES'),'notice');
+    return;
+}
+
+$files = modWl_SliderHelper::saveImages();
+
 // Add JavaScript
 JHTML::_('script', 'mod_wl_slider/scripts.js', array('version' => 'auto', 'relative' => true));
 

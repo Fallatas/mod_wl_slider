@@ -84,4 +84,30 @@ class modWl_SliderHelper
     }
 
 
+    /* Save Images */
+
+
+    static function saveImages()
+    {
+
+        $files = array();
+
+        if($handle = @opendir('images/wl_images'))
+        {
+
+            while($file = readdir($handle)){
+
+                if($file != '.' && $file != '..')
+                {
+                    $files[] = $file;
+                    sort($files);
+                }
+            }
+
+            sort($files);
+        }
+
+        return $files;
+    }
+
 }
