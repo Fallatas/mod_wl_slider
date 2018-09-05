@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+
+    <field 	name="pics"
+              type="media"
+              label="MOD_WL_SLIDER_LOADING_PICTURE_LABEL"
+              directory="images/wl-images"
+    />
+
+</form>
