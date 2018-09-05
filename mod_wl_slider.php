@@ -18,6 +18,8 @@ $folder = modWl_SliderHelper::createFolder();
 
 $copy = modWl_SliderHelper::copyImages($params);
 
+$number = modWl_SliderHelper::countImages();
+
 // Add JavaScript
 JHTML::_('script', 'mod_wl_slider/scripts.js', array('version' => 'auto', 'relative' => true));
 

@@ -66,4 +66,22 @@ class modWl_SliderHelper
     }
 
 
+    /* counts pictures in the folder */
+
+
+    static function countImages()
+    {
+
+        if(is_dir("images"))
+        {
+
+            $files = scandir('images/wl_images');
+            $files_count = count($files)-2;
+            $count = $files_count;
+        }
+
+        return $count;
+    }
+
+
 }
