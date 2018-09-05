@@ -16,5 +16,12 @@ require dirname(__FILE__) . '/control.php';
 
 $folder = modWl_SliderHelper::createFolder();
 
+// Add JavaScript
+JHTML::_('script', 'mod_wl_slider/scripts.js', array('version' => 'auto', 'relative' => true));
+
+
+// Check for a custom CSS file
+JHtml::_('stylesheet', 'mod_wl_slider/user.css', array('version' => 'auto', 'relative' => true));
+
 // View
 require JModuleHelper::getLayoutPath('mod_wl_slider', $params->get('layout', 'default'));

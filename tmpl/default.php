@@ -9,6 +9,8 @@
 
 defined('_JEXEC') or die;
 
+JHtml::_('stylesheet', 'mod_wl_slider/style.css', array('version' => 'auto', 'relative' => true));
+JHtml::_('script', 'mod_wl_slider/scripts.js', array('version' => 'auto', 'relative' => true));
 ?>
 
 <div id="wl-slider">
