@@ -21,87 +21,84 @@
     </files>
     <config>
         <fields name="params">
-            <fieldset name="basic" addfieldpath="/administrator/components/com_wl_slider/models/fields">
-                <fieldset>
-
+            <fieldset name="basic">
                     <field
-                            name= "params"
-                            description= "MOD_WL_SLIDER_LOADING_PICTURES_DESC"
-                            type= "subform"
-                            label= "MOD_WL_SLIDER_LOADING_PICTURES_LABEL"
-                            min= "1"
-                            max= "12"
-                            required= "true"
-                            formsource= "modules/mod_wl_slider/pictures.xml"
-                            multiple= "true"
-                            buttons= "add,remove"
+                        name= "params"
+                        description= "MOD_WL_SLIDER_LOADING_PICTURES_DESC"
+                        type= "subform"
+                        label= "MOD_WL_SLIDER_LOADING_PICTURES_LABEL"
+                        min= "1"
+                        max= "12"
+                        required= "true"
+                        formsource= "modules/mod_wl_slider/pictures.xml"
+                        multiple= "true"
+                        buttons= "add,remove"
                     />
 
                     <field
-                            type="color"
-                            name="buttoncolor"
-                            description="MOD_WL_SLIDER_BUTTON_COLOR_DESC"
-                            label="MOD_WL_SLIDER_BUTTON_COLOR_LABEL"
-                            default=""
+                        type="color"
+                        name="buttoncolor"
+                        description="MOD_WL_SLIDER_BUTTON_COLOR_DESC"
+                        label="MOD_WL_SLIDER_BUTTON_COLOR_LABEL"
+                        default=""
                     />
 
                     <field
-                            name="sliderwidth"
-                            type="integer"
-                            default="20"
-                            label="MOD_WL_SLIDER_WIDTH_LABEL"
-                            description="MOD_WL_SLIDER_WIDTH_DESC"
-                            first="20"
-                            last="90"
-                            step="10"
+                        name="sliderwidth"
+                        type="integer"
+                        default="20"
+                        label="MOD_WL_SLIDER_WIDTH_LABEL"
+                        description="MOD_WL_SLIDER_WIDTH_DESC"
+                        first="20"
+                        last="90"
+                        step="10"
                     />
 
 
                     <field
-                            name="sliderheight"
-                            type="integer"
-                            default="20"
-                            label="MOD_WL_SLIDER_HEIGHT_LABEL"
-                            description="MOD_WL_SLIDER_HEIGHT_DESC"
-                            first="20"
-                            last="90"
-                            step="10"
+                        name="sliderheight"
+                        type="integer"
+                        default="20"
+                        label="MOD_WL_SLIDER_HEIGHT_LABEL"
+                        description="MOD_WL_SLIDER_HEIGHT_DESC"
+                        first="20"
+                        last="90"
+                        step="10"
                     />
 
                     <field
-                            name="placeholderimages"
-                            type="radio"
-                            default="1"
-                            label="MOD_WL_SLIDER_PLACEHOLDERIMAGES_LABEL"
-                            description="MOD_WL_SLIDER_PLACEHOLDERIMAGESS_DESC"
-                            class="btn-group btn-group-yesno">
+                        name="placeholderimages"
+                        type="radio"
+                        default="1"
+                        label="MOD_WL_SLIDER_PLACEHOLDERIMAGES_LABEL"
+                        description="MOD_WL_SLIDER_PLACEHOLDERIMAGESS_DESC"
+                        class="btn-group btn-group-yesno">
                         <option value="1">JYES</option>
                         <option value="0">JNO</option>
                     </field>
 
                     <field
-                            type="color"
-                            name="loadingcolor"
-                            description="MOD_WL_SLIDER_LOADING_COLOR_DESC"
-                            label="MOD_WL_SLIDER_LOADING_COLOR_LABEL"
-                            default="#ffffff"
+                        type="color"
+                        name="loadingcolor"
+                        description="MOD_WL_SLIDER_LOADING_COLOR_DESC"
+                        label="MOD_WL_SLIDER_LOADING_COLOR_LABEL"
+                        default="#ffffff"
                     />
 
                     <field
-                            name="slidetime"
-                            type="list"
-                            default="'3000"
-                            label="MOD_WL_SLIDER_TIME_LABLE"
-                            description="MOD_WL_SLIDER_TIME_DESC">
-                        <option value="3000">3 Sekunden</option>
-                        <option value="4000">4 Sekunden</option>
-                        <option value="5000">5 Sekunden</option>
-                        <option value="7000">7 Sekunden</option>
-                        <option value="8000">8 Sekunden</option>
-                        <option value="9000">9 Sekunden</option>
-                        <option value="10000">10 Sekunden</option>
-                    </field>
-                </fieldset>
+                        name="slidetime"
+                        type="list"
+                        default="'3000"
+                        label="MOD_WL_SLIDER_TIME_LABLE"
+                        description="MOD_WL_SLIDER_TIME_DESC">
+                    <option value="3000">3 Sekunden</option>
+                    <option value="4000">4 Sekunden</option>
+                    <option value="5000">5 Sekunden</option>
+                    <option value="7000">7 Sekunden</option>
+                    <option value="8000">8 Sekunden</option>
+                    <option value="9000">9 Sekunden</option>
+                    <option value="10000">10 Sekunden</option>
+                </field>
             </fieldset>
         </fields>
     </config>
